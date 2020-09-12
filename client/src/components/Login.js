@@ -14,16 +14,14 @@ const Login = () => {
   }
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
-  const token = localStorage.getItem("token")
-
   const login = e => {
     e.preventDefault();
     axios
       .post("http://localhost:5000/api/login", credentials)
       .then((res) => {
         console.log(res);
-        localStorage.setItem("token", res);
-        useHistory.push("/protected");
+        localStorage.setItem("token", res.data.payload);
+        useHistory.push("/bubble-page");
       })
       .catch((err) => console.log("Wrong ass pass!", err.response));
   }

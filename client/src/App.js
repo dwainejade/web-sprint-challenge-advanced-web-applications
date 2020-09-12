@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="nav">
-          <div>
+          <div className="lnk">
             <Link to="/login">Login</Link>
           </div>
           <div>
