@@ -23,7 +23,7 @@ const Login = () => {
         localStorage.setItem("token", res.data.payload);
         useHistory.push("/bubble-page");
       })
-      .catch((err) => console.log("Wrong ass pass!", err.response));
+      .catch((err) => console.log("Wrong pass, ass!", err.response));
   }
 
   return (
