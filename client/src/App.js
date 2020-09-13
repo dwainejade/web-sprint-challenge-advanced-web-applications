@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="nav">
           <div className="link">
             <Link to="/login">Login</Link>
           </div>
