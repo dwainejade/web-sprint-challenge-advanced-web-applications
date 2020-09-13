@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <>
-      <form onSubmit={login} className="form-group">
+      <form onSubmit={login} className="form-group login">
         <label>Username</label>
         <input
           className="form-control"

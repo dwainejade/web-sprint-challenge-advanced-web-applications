@@ -11,12 +11,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="nav">
-          <div className="lnk">
+        <div className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="link">
             <Link to="/login">Login</Link>
           </div>
           <div>
-            <Link to="/bubblepage">Protected Page</Link>
+            <Link to="/bubblepage">Bubble Page</Link>
           </div>
         </div>
         <Switch>

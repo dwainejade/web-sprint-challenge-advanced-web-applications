@@ -19,10 +19,10 @@ const BubblePage = () => {
 
 
   return (
-    <>
+    <div className="bubble-page">
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
-    </>
+    </div>
   );
 };
 
